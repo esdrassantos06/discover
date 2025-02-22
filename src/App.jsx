@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      <main className='__main flex flex-col items-center justify-center dark:text-darkModeText text-lightModeText'>
+      <main className='__main flex flex-col items-center justify-center dark:text-dark-mode-text text-light-mode-text'>
 
         <div className='__photo-and-name select-none gap-2 flex flex-col items-center justify-center'>
-          <img src={Me} alt='Esdras' className='w-24 h-24 transition-transform ease-in-out dark:border-darkModeStroke border-lightModeStroke  border-opacity-50 border-2 border-solid rounded-full object-cover overflow-hidden' />
+          <img src={Me} alt='Esdras' className='w-24 h-24 transition-transform ease-in-out dark:border-dark-mode-stroke/50 border-light-mode-stroke/50 border-2 border-solid rounded-full object-cover overflow-hidden' />
           <a href='https://www.instagram.com/esdras.snts/' className='inter text-sm' target='_blank'>@esdras.snts</a>
         </div>
 

@@ -1,3 +1,13 @@
 .inter{
     font-family: 'Inter', serif !important;
 }
+
+html.dark {
+    background: url('./assets/background/bg-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+html {
+    background: url('./assets/background/bg-desktop-light.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
