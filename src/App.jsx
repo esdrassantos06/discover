@@ -4,7 +4,6 @@ import DarkModeButton from './components/DarkModeButton';
 import Buttons from './components/Buttons';
 import SocialMediaIcons from './components/Icons';
 import { Heart } from "@phosphor-icons/react";
-import React from 'react';
 
 
 function App() {
