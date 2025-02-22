@@ -1,3 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-dark-mode-text: #fff;
+  --color-dark-mode-stroke: rgba(255, 255, 255, 0.5);
+  --color-dark-mode-background: #000;
+  --color-surface-dark-mode: rgba(255, 255, 255, 0.1);
+  --color-surface-dark-mode-hover: rgba(255, 255, 255, 0.05);
+  --color-light-mode-background: #fff;
+  --color-light-mode-text: #000;
+  --color-light-mode-stroke: rgba(0, 0, 0, 0.5);
+  --color-surface-light-mode: rgba(0, 0, 0, 0.1);
+  --color-surface-light-mode-hover: rgba(0, 0, 0, 0.05);
+
+  --background-image-hero: url(./src/assets/background/bg-desktop.jpg);
+  --background-image-hero-light: url(./src/assets/background/bg-desktop-light.jpg);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
